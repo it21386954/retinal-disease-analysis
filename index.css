@@ -40,11 +40,17 @@ header {
   padding: 1.5rem 0;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-container {
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -56,6 +62,23 @@ header h1 {
   color: transparent;
   user-select: none;
 }
+
+/* ===== Logo Styles ===== */
+header .logo {
+  width: 80px;  /* Increase the width to make it bigger */
+  height: 80px; /* Increase the height to match the width */
+  object-fit: contain;
+  border-radius: 50%; /* Circular logo */
+  border: 3px solid var(--primary); /* Slightly thicker border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-right: 20px; /* Space between the logo and title */
+  transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+  transform: scale(1.1); /* Slightly increase size when hovering */
+}
+
 
 /* ===== Navigation ===== */
 nav {
