@@ -1,2 +1,2 @@
-# retinal-disease-analysis
+# Retinal-Disease-analysis
 retinal-disease-analysisproject 
